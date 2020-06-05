@@ -1,6 +1,6 @@
-FROM centos
+FROM sunny078/apache-webserver-php:v1
 
-RUN yum update -qy
-RUN yum install httpd -y
 COPY * /var/www/html/
+EXPOSE 22
 CMD ["/usr/sbin/httpd" "-D"]
+
