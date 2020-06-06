@@ -1,6 +1,6 @@
-FROM sunny078/developer:v1
-
-COPY * /var/www/html/
-EXPOSE 80
-CMD ["/usr/sbin/httpd","-DFOREGROUND"]
-
+From centos
+WORKDIR /root/Task3D
+COPY . /var/www/html
+RUN yum install httpd -y
+CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
+Expose 80
