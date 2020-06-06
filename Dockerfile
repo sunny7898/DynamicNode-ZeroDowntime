@@ -1,4 +1,4 @@
-FROM sunny078/apache-webserver-php:v1
+FROM sunny078/httpd:v1
 
 COPY * /var/www/html/
 EXPOSE 80
